@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments Index</title>
+
+    <%- include('../partials/styling') %> 
+</head>
+
+<body>
+    <!-- Form rendered using: INDEX - display all comments (GET) -->
+    <h1>Comments</h1>
+    <ul>
+        <% for(let c of comments) {%>
+        <li>
+            <div> <b><%=c.username%></b> </div>
+            <div class="comment"> <%=c.comment%> </div>
+
+            <div class="comment-icon-container"> 
+                <!-- SHOW - details about one particular comment (GET using id) -->
+                <span> <a href="/comments/<%= c.id %>">details</a> </span>
+                <span class="material-symbols-outlined sz-18 thumbs-up-icon">thumb_up</span>
+                <span class="material-symbols-outlined sz-18 thumbs-down-icon">thumb_down</span>
+            </div>
+        </li>
+        <% }%>
+    </ul>
+
+    <!-- NEW - form rendered to create new comment (GET) -->
+    <a href="/comments/new" id="new-comment">New Comment</a>
+
+</body>
+
+</html>

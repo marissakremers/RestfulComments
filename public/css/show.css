@@ -1,0 +1,21 @@
+/* Color variables */
+h2 {
+    font-size: 20px;
+}
+/* Can use this */
+span {
+    display: flex;
+}
+span > a, span > form {
+    padding: 1em;
+    margin: 1em 2em;
+    /* Or use this */
+    /* display: flex; */
+}
+span > form {
+    color: var(--main_text);
+    margin: 10px 2em;
+}
+form button {
+    margin: 0px;
+}

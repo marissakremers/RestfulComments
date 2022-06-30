@@ -1,0 +1,4 @@
+textarea {
+    border: 2px solid var(--main_text);
+    font-family: 'Roboto Mono', sans-serif;
+}

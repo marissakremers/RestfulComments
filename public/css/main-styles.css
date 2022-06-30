@@ -1,0 +1,90 @@
+/* Color variables */
+:root {
+    --main_text: #50574f;
+    --accessories: #72788D;
+    --highlight: #AFA2FF;
+    --button_highlight: rgb(221, 221, 221);
+}
+
+
+
+/* Like and dislike buttons (Google Icons) */
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' 25,
+    'opsz' 48
+}
+.material-symbols-outlined.sz-18 {
+    font-size: 18px;
+    
+}
+.comment-icon-container { 
+    display: inline-block;
+    position: relative;
+}
+.thumbs-up-icon {
+    color: var(--accessories);
+    position: absolute;
+    top: 0px;
+    right: -25px;
+}
+.thumbs-down-icon {
+    color: var(--accessories);
+    position: absolute;
+    top: 0px;
+    right: -50px;
+}
+.thumbs-up-icon:hover, .thumbs-down-icon:hover {
+    cursor: pointer;
+}
+
+
+
+/* General element styling */
+body {
+    color: var(--main_text);
+    font-family: 'Lato', sans-serif;
+    margin: 1em;
+}
+h1 {
+    font-size: 24px;
+}
+a {
+    color: var(--accessories);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--highlight);
+}
+li {
+    margin: 1em;
+}
+li::marker {
+    color: var(--highlight);
+    content: '› ';
+}
+div {
+    overflow: visible;
+}
+button {
+    padding: .5em 2em;
+    margin: 1em;
+    border: 2px solid var(--main_text);
+    border-radius: 5px;
+    color: var(--main_text);
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+}
+button:hover {
+    background-color: var(--button_highlight);
+    cursor: pointer;
+}
+
+
+/* Styling by id */
+#new-comment {
+    margin: 2em;
+    padding: 1em;
+}

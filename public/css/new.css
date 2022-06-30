@@ -1,0 +1,14 @@
+textarea {
+    border: 2px solid var(--main_text);
+    font-family: 'Roboto Mono', sans-serif;
+}
+input[type=text] {
+    height: 10px;
+    font-family: 'Roboto Mono', sans-serif;
+}
+section {
+    margin: 2em 1em;
+}
+#index {
+    margin-left: 1em;
+}

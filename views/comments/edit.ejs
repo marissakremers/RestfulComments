@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+
+    <%- include('../partials/styling') %>
+    <link rel="stylesheet" type="text/css" href="/css/edit.css">
+</head>
+
+<body>
+    <!-- Form rendered using: EDIT - renders a form to edit a comment (GET using id) -->
+    <h1>Edit</h1>
+    
+    <!-- UPDATE - updates a particular comment (PATCH using id) -->
+    <form method="POST" action="/comments/<%=comment.id%>?_method=PATCH">
+        <textarea name="comment" id="" cols="30" rows="10"><%= comment.comment %></textarea>
+        <button>Save</button>
+    </form>
+
+</body>
+
+</html>
